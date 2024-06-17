@@ -1,0 +1,83 @@
+body {
+    background: black;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    color: white;
+    font-size: 4.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+span {
+    color: white;
+    font-size: 4.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#frase p {
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 2.0rem;
+    line-height: 2;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.1rem 2.3rem;
+    background-color: rgb(57, 55, 53);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 2rem;
+    transition: background 400ms;
+}
+
+#bg-image {
+    background-image: url("https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: contain;
+    opacity: 0.3;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+a:hover {
+    background-color: rgb(68, 65, 63);
+}
+
+@media (width < 40rem) {
+    html {
+        font-size: 70%;
+    }
+}
+
+h1, p, a {
+    animation: appear 1s backwards;
+}
+
+h1 {
+    animation-delay: 0.2s;
+}
+
+p {
+    animation-delay: 0.9s;
+}
+
+a {
+    animation-delay: 1.6s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+}
